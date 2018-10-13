@@ -24,7 +24,7 @@ router.get("/filterUsers", (req, res) => {
 });
 
 router.post("/filterUsersBySkill", (req, res) => {
-  const {radius=10, lat, long, skill} = req.body;
+  const {radius=1, lat, long, skill} = req.body;
   console.log(radius);
   console.log(lat);
   console.log(long);
