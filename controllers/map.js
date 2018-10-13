@@ -23,8 +23,8 @@ router.get("/filterUsers", (req, res) => {
   });
 });
 
-router.post("/filterUsersBySkill", (req, res) => {
-  const {radius=1, lat, long, skill} = req.body;
+router.get("/filterUsersBySkill", (req, res) => {
+  const {radius=1, lat, long, skill} = req.query;
   console.log(radius);
   console.log(lat);
   console.log(long);
