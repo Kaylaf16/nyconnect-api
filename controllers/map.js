@@ -37,7 +37,8 @@ router.post("/filterUsersBySkill", (req, res) => {
 
   db.query(query, { type: db.QueryTypes.SELECT }).then(users => {
     return res.json(users);
-  });
+  }).catch(error => console.log(error)
+  );
 });
 
 module.exports = router;
